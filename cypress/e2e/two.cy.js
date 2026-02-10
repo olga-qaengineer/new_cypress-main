@@ -1,8 +1,8 @@
 describe('Проверка покупки нового аватара', function () {
     it('Покупка нового аватара', function () {
          cy.visit('https://pokemonbattle.ru/'); //заходим на сайт
-         cy.get('#k_email').type('olyaboyarock@yandex.ru'); //вводим логин
-         cy.get('#k_password').type('MyMimi1'); //вводим пароль
+         cy.get('#k_email').type('USER_LOGIN'); //вводим логин
+         cy.get('#k_password').type('USER_PASSWORD'); //вводим пароль
          cy.get('.MuiButton-root').click(); //нажимаем кнопку войти
          cy.wait(2000);
          cy.get('.header_card_trainer').click(); //клик на аву тренера
